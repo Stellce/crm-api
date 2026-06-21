@@ -92,6 +92,16 @@ flowchart LR
     Hangfire --> SqlServer
 ```
 
+## API documentation screenshots
+
+Swagger UI is available in Development mode and documents the main API modules: authentication, customers, orders, reports, and users.
+
+![Swagger API documentation overview](docs/images/swagger-overview.jpg)
+
+Example customer endpoint with search, sorting, pagination parameters, and a paged response schema:
+
+![Customer endpoint with filtering and pagination](docs/images/customer-endpoint.jpeg)
+
 ## Database and SQL
 
 The project uses SQL Server with Entity Framework Core migrations.
@@ -603,6 +613,10 @@ The GitHub Actions workflow runs on pushes and pull requests to `main`:
 ```text
 restore -> build -> test
 ```
+
+Recent GitHub Actions workflow runs:
+
+![GitHub Actions workflow runs](docs/images/github-actions.jpeg)
 
 Workflow file:
 
